@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:padding="@dimen/standard_padding">
+
+    <include
+        android:id="@+id/hud_top"
+        layout="@layout/hud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/currency_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hud_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="@color/android_green"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold" />
+
+     <ImageButton
+        android:id="@+id/click_button"
+        android:layout_width="@dimen/main_button_size"
+        android:layout_height="@dimen/main_button_size"
+        android:layout_centerInParent="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_main_clicker" />
+
+
+    <Button
+        android:id="@+id/buy_upgrade_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/android_green"
+        android:text="Улучшить"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

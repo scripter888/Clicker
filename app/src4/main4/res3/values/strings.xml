@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Android Clicker</string>
+    <string name="income_label">Доход: %s/сек</string>
+    <string name="click_label">Клик: %s</string>
+    <string name="upgrade_buy">Улучшить (%s)</string>
+</resources>

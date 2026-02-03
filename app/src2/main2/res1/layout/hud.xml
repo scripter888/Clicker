@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/income_per_second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доход: 0/сек"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/click_power_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Клик: 1"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

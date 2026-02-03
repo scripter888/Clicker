@@ -1,0 +1,7 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="android_green">#A4C639</color>
+    <color name="dark_gray">#212121</color>
+    <color name="accent_green">#7CB342</color>
+</resources>
