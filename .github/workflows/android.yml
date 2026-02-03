@@ -3,8 +3,6 @@ name: Android CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -18,18 +16,14 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
-
-    - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
 
     - name: Build with Gradle
       run: |
-        cd app
-        gradle assembleDebug
-
+        chmod +x app/gradlew || true
+        gradle assembleDebug -p app
+      
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: clicker-debug-apk
-        path: app/build/outputs/apk/debug/app-debug.apk
+        name: clicker-apk
+        path: app/build/outputs/apk/debug/*.apk
